@@ -1,0 +1,8 @@
+{
+    "name": "<text>",
+    "description": "<text>",
+    "configuration": {
+        "governorAddress": "<contract address>",
+        "tokenAddress": "<contract address>"
+    }
+}
