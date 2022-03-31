@@ -1,0 +1,55 @@
+{
+    "name": "Example ERC20 approve",
+    "description": "This is a template that show case the ERC20 approve proposal through a Governor",
+    "parameters": [
+        {
+            "id": "address",
+            "label": "Address allowed to transfer",
+            "type": "address"
+        },
+        {
+            "id": "amount",
+            "label": "Maximum amount allowed",
+            "type": "tokenAmount"
+        }
+    ],
+    "actions": [
+        {
+            "targetContractAddress": "<contract address>",
+            "targetAbiFunction": {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "spender",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "approve",
+                "outputs": [
+                    {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            "inputs": [
+                {
+                    "inputIndex": 0,
+                    "parameterId": "address"
+                },
+                {
+                    "inputIndex": 1,
+                    "parameterId": "amount"
+                }
+            ]
+        }
+    ]
+}
